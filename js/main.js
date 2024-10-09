@@ -49,8 +49,7 @@ buttonSubmit.addEventListener("click", function () {
         <b>Chilometri: <b> ${kmValue} <br>
         <b>Età: <b> ${ageValue} <br>
         <b>Costo Chilometro: <b> ${kmPrice} <br>
-        <b>Costo Totale: <b> ${price} €<br>
+        <b>Costo Biglietto: <b> ${price.toFixed(2)} €<br>
         `;;
     }
 });
-
