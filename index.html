@@ -19,14 +19,21 @@
                 <h3 class="mt-3">Calcolo costo biglietto del treno</h3>
             </div>
             <div class="col-4">
-                <form class="bg-light rounded-pill">
-                    <label for="KM">Chilometri da percorrere:</label><br>
-                    <input type="number" id="KM" name="KM" class="rounded-pill"><br>
-                    <label for="age">Età:</label><br>
-                    <input type="number" id="age" name="age" class="rounded-pill"><br>
-                    <button type="button" class="btn btn-primary">Primary</button>
+                <form class="bg-light rounded-pill" id="data">
+                    <label for="KM" class="mt-2">Chilometri da percorrere:</label><br>
+                    <input type="number" id="KM" name="KM" class="rounded-pill" placeholder="Chilometri" max="100"><br>
+                    <label for="Age">Età:</label><br>
+                    <input type="number" id="Age" name="Age" class="rounded-pill" placeholder="Età" max="120"><br>
+                    <button type="button" class="btn btn-primary mb-2 mt-2" id="submit">Primary</button>
                 </form>
+                <div class="alert alert-danger d-none rounded-pill" id="dataError" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+                <div class="alert alert-success d-none rounded-pill" id="succes" role="alert">
+                    A simple success alert—check it out!
+                  </div>
             </div>
+            
         </div>
     </main>
 
