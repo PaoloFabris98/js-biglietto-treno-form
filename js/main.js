@@ -8,7 +8,7 @@ let age = document.getElementById("Age");
 
 
 const minAge = 0;
-const maxAge = 500;
+const maxAge = 120;
 const minKM = 0;
 const maxKM = 100;
 
