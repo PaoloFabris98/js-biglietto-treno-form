@@ -26,6 +26,7 @@ KM.setAttribute("max",maxKM);
 age.setAttribute("max",maxAge)
 
 buttonSubmit.addEventListener("click", function () {
+  event.preventDefault()
   let kmValue = Number(KM.value);
   let ageValue = Number(age.value);
 
@@ -33,13 +34,16 @@ buttonSubmit.addEventListener("click", function () {
   console.log("Età:", ageValue);
 
   if (isNaN(kmValue) || kmValue < minKM || kmValue > maxKM) {
+    succesData.classList.add("d-none");
     errorData.classList.remove("d-none");
     errorData.innerHTML =
       errorData.innerHTML = `Il campo dei Chilometri accetta solo numeri da ${minKM} al ${maxKM}.`;
   } else if (isNaN(ageValue) || ageValue < minAge || ageValue > maxAge) {
+    succesData.classList.add("d-none");
     errorData.classList.remove("d-none");
     errorData.innerHTML = `Il campo dell'età accetta solo numeri da ${minAge} al ${maxAge}.`;
   } else {
+    errorData.classList.add("d-none");
     if (ageValue < underAge) {
       price = kmValue * kmPrice;
       price = price - (price / 100) * underAgeDiscount;
