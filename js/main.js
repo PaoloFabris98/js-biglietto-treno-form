@@ -1,11 +1,14 @@
 const buttonSubmit = document.getElementById("submit");
 const errorData = document.getElementById("dataError");
 const succesData = document.getElementById("succes");
+
 let KM = document.getElementById("KM");
 let age = document.getElementById("Age");
 
+
+
 const minAge = 0;
-const maxAge = 120;
+const maxAge = 500;
 const minKM = 0;
 const maxKM = 100;
 
@@ -17,7 +20,10 @@ const underAgeDiscount = 20;
 const overAgeDiscount = 40;
 let price = 0;
 
-console.log(errorData);
+KM.setAttribute("min",minKM);
+age.setAttribute("min",minAge)
+KM.setAttribute("max",maxKM);
+age.setAttribute("max",maxAge)
 
 buttonSubmit.addEventListener("click", function () {
   let kmValue = Number(KM.value);

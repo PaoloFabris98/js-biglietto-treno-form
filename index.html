@@ -21,10 +21,10 @@
             <div class="col-4">
                 <form class="bg-light rounded-pill" id="data">
                     <label for="KM" class="mt-2">Chilometri da percorrere:</label><br>
-                    <input type="number" id="KM" name="KM" class="rounded-pill" placeholder="Chilometri" max="100"><br>
+                    <input type="number" id="KM" name="KM" class="rounded-pill w-50" placeholder="Chilometri" min="0" max="100"><br>
                     <label for="Age">Età:</label><br>
-                    <input type="number" id="Age" name="Age" class="rounded-pill" placeholder="Età" max="120"><br>
-                    <button type="button" class="btn btn-primary mb-2 mt-2" id="submit">Calcola Costo</button>
+                    <input type="number" id="Age" name="Age" class="rounded-pill w-50" placeholder="Età" min="0" max="120"><br>
+                    <button type="button" class="btn btn-primary mb-2 mt-2 " id="submit">Calcola Costo</button>
                 </form>
                 <div class="alert alert-danger d-none rounded-pill" id="dataError" role="alert">
                     A simple danger alert—check it out!
