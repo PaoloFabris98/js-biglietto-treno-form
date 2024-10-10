@@ -1,4 +1,5 @@
 const buttonSubmit = document.getElementById("submit");
+const buttonReset = document.getElementById("reset");
 const errorData = document.getElementById("dataError");
 const succesData = document.getElementById("succes");
 
@@ -25,7 +26,7 @@ age.setAttribute("min",minAge)
 KM.setAttribute("max",maxKM);
 age.setAttribute("max",maxAge)
 
-buttonSubmit.addEventListener("click", function () {
+buttonSubmit.addEventListener("click", function (event) {
   event.preventDefault()
   let kmValue = Number(KM.value);
   let ageValue = Number(age.value);
